@@ -1,4 +1,4 @@
-# npm-manage
+# nmg-manage
 npm 管理工具，快速切换 npm 源
 
 ## 安装

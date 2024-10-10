@@ -1,12 +1,12 @@
 {
-  "name": "xnpm-manage",
-  "version": "1.0.3",
+  "name": "nmg-manage",
+  "version": "1.0.4",
   "description": "npm 管理工具",
   "private": false,
-  "homepage": "https://github.com/xiyueyezibile/npm-manage",
+  "homepage": "https://github.com/xiyueyezibile/nmg-manage",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xiyueyezibile/npm-manage.git"
+    "url": "git+https://github.com/xiyueyezibile/nmg-manage.git"
   },
   "bin": {
     "nmg": "bin/index.js"
