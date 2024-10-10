@@ -1,6 +1,6 @@
 {
   "name": "nmg-manage",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "npm 管理工具",
   "private": false,
   "homepage": "https://github.com/xiyueyezibile/nmg-manage",
@@ -29,8 +29,15 @@
     "build": "tsup",
     "pub": "node scripts/publish.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "npm",
+    "pnpm",
+    "cnpm",
+    "yarn",
+    "manage",
+    "nmg-manage"
+  ],
+  "author": "xiyueyezibile",
   "license": "ISC",
   "devDependencies": {
     "@types/cross-spawn": "^6.0.6",
