@@ -3,7 +3,7 @@ npm 管理工具，快速切换 npm 源
 
 ## 安装
 ```bash
-npm install xnpm-manage -g
+npm install nmg-manage -g
 ```
 
 ## 快速上手
