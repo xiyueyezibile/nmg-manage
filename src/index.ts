@@ -62,7 +62,7 @@ program
 program
   .command("clean [tag]")
   .description("Clean all npm address")
-  .action(async (tag) => {
+  .action(async () => {
     await fs.unlink(saveFilePath);
     console.log(chalk.green("Clean All success"));
   });
@@ -74,7 +74,7 @@ program
       path.join(__dirname, "config.json")
     );
     if (!isExistConfigPath) {
-      exec("npm config get registry", (err, stdout, stderr) => {
+      exec("npm config get registry", (err, stdout) => {
         if (err) {
           console.log(chalk.red(err));
         } else {
@@ -136,7 +136,7 @@ program
       `npm config set registry ${
         savaLists.filter((item: any) => item.name === tag)[0].target
       }`,
-      (err, stdout, stderr) => {
+      (err,  stderr) => {
         if (err) {
           console.log(chalk.red(err));
           return;
