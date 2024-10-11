@@ -4,8 +4,10 @@ import path from "path";
 import fs from "fs-extra";
 import chalk from "chalk";
 import { exec } from "child_process";
+import { fileURLToPath } from "url";
 
-const __dirname = path.resolve();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 const saveFilePath = path.join(__dirname, "data.json");
 const saveRepoPath = path.join(__dirname, "repo-data.json");
 const configPath = path.join(__dirname, "config.json");
@@ -57,7 +59,6 @@ program
   .option("-r")
   .description("Add a new npm address to the list")
   .action(async (tag, npmAddress, options) => {
-    
     if (options.r && (await hasDiffTag(tag, saveRepoPath))) {
       await addJSONData(
         tag,

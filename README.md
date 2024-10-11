@@ -3,7 +3,7 @@
 
 ## 安装
 ```bash
-npm install nmg-manage -g
+npm install -g nmg-manage
 ```
 
 ## 快速上手
